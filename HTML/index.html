@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Моніторинг котельні</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <h1>Моніторинг котельні</h1>
+
+    <div class="controls">
+        <button onclick="updateData()">Оновити</button>
+        <button onclick="toggleAuto()" id="autoBtn">Авто: Вкл</button>
+    </div>
+
+    <table>
+
+        <tr>
+            <th>Параметр</th>
+            <th>Значення</th>
+            <th>Стан</th>
+        </tr>
+
+        <tr>
+            <td>Температура теплоносія</td>
+            <td id="temp"></td>
+            <td id="tempStatus"></td>
+        </tr>
+
+        <tr>
+            <td>Тиск у системі</td>
+            <td id="pressure"></td>
+            <td id="pressureStatus"></td>
+        </tr>
+
+        <tr>
+            <td>Витрата газу</td>
+            <td id="gas"></td>
+            <td id="gasStatus"></td>
+        </tr>
+
+        <tr>
+            <td>Температура димових газів</td>
+            <td id="smoke"></td>
+            <td id="smokeStatus"></td>
+        </tr>
+
+        <tr>
+            <td>Потужність котла</td>
+            <td id="power"></td>
+            <td id="powerStatus"></td>
+        </tr>
+
+    </table>
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
